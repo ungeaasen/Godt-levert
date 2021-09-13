@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './img/logo-full.svg'
+import './App.css'
+import { Dropdown } from './components/Dropdown.js'
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Dropdown</h1>
       </header>
+      <Dropdown selectedItem="Option 1" list={["Option 1", "Option 2", "Option 3"]} option1="Option 1" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
